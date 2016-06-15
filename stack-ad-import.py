@@ -104,3 +104,6 @@ for orgname, org in neworgs.iteritems():
             sorgs[orgname] = u
             print "Adding user " + u + " to Org " + orgname
             res = subprocess.Popen(["stackato", "link-user-org", u, orgname], stdout=subprocess.PIPE).communicate()[0]
+            print "Adding user " + u + " to space " + orgname + "/default"
+            res = subprocess.Popen(["stackato", "link-user-space", u, defaultspace, "--organization", orgname],
+                                   stdout=subprocess.PIPE).communicate()[0]
