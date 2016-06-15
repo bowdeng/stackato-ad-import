@@ -3,7 +3,7 @@ Import organisations from Active Directory groups and then import member users i
 
 ## Installation
 ```
-pip install -r requiements
+pip install -r requirements
 ```
 
 Currently the script also relies on the stackato client being on the path. This has only been tested on MacOS and *NIX currently, Windows would probably need the path modifying. 
